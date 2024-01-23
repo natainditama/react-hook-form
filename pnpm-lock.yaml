@@ -123,8 +123,8 @@ devDependencies:
     specifier: ^0.34.1
     version: 0.34.1(rollup@2.79.1)(typescript@5.1.3)
   tsd:
-    specifier: ^0.27.0
-    version: 0.27.0
+    specifier: ^0.30.0
+    version: 0.30.4
   typescript:
     specifier: ^5.1.3
     version: 5.1.3
@@ -673,7 +673,7 @@ packages:
     resolution: {integrity: sha512-wlrznINZI5sMjwvUoLVk617ll/UYfGIZNxmbU+Pa7wmkL4vYzhV9R2pwVqUh4NWWuLQWkI8+8mOkxs//prKQ3g==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      jest-get-type: 29.2.0
+      jest-get-type: 29.4.3
     dev: true
 
   /@jest/expect-utils@29.5.0:
@@ -1435,8 +1435,9 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@tsd/typescript@4.9.5:
-    resolution: {integrity: sha512-+UgxOvJUl5rQdPFSSOOwhmSmpThm8DJ3HwHxAOq5XYe7CcmG1LcM2QeqWwILzUIT5tbeMqY8qABiCsRtIjk/2g==}
+  /@tsd/typescript@5.3.3:
+    resolution: {integrity: sha512-CQlfzol0ldaU+ftWuG52vH29uRoKboLinLy84wS8TQOu+m+tWoaUfk4svL4ij2V8M5284KymJBlHUusKj6k34w==}
+    engines: {node: '>=14.17'}
     dev: true
 
   /@types/argparse@1.0.38:
@@ -2836,11 +2837,6 @@ packages:
   /detect-newline@3.1.0:
     resolution: {integrity: sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==}
     engines: {node: '>=8'}
-    dev: true
-
-  /diff-sequences@29.3.1:
-    resolution: {integrity: sha512-hlM3QR272NXCi4pq+N4Kok4kOp6EsgOM3ZSpJI7Da3UAs+Ttsi8MRmB6trM/lhyzUxGfOgnpkHtgqm5Q/CTcfQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
   /diff-sequences@29.4.3:
@@ -4509,16 +4505,6 @@ packages:
       - supports-color
     dev: true
 
-  /jest-diff@29.3.1:
-    resolution: {integrity: sha512-vU8vyiO7568tmin2lA3r2DP8oRvzhvRcD4DjpXc6uGveQodyk7CKLhQlCSiwgx3g0pFaE88/KLZ0yaTWMc4Uiw==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      chalk: 4.1.2
-      diff-sequences: 29.3.1
-      jest-get-type: 29.4.3
-      pretty-format: 29.5.0
-    dev: true
-
   /jest-diff@29.5.0:
     resolution: {integrity: sha512-LtxijLLZBduXnHSniy0WMdaHjmQnt3g5sa16W4p0HqukYTTsyTW3GD1q41TyGl5YFXj/5B2U6dlh5FM1LIMgxw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -4624,8 +4610,8 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       chalk: 4.1.2
-      jest-diff: 29.3.1
-      jest-get-type: 29.2.0
+      jest-diff: 29.5.0
+      jest-get-type: 29.4.3
       pretty-format: 29.5.0
     dev: true
 
@@ -6841,14 +6827,15 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /tsd@0.27.0:
-    resolution: {integrity: sha512-G/2Sejk9N21TcuWlHwrvVWwIyIl2mpECFPbnJvFMsFN1xQCIbi2QnvG4fkw3VitFhNF6dy38cXxKJ8Paq8kOGQ==}
+  /tsd@0.30.4:
+    resolution: {integrity: sha512-ncC4SwAeUk0OTcXt5h8l0/gOLHJSp9ogosvOADT6QYzrl0ITm398B3wkz8YESqefIsEEwvYAU8bvo7/rcN/M0Q==}
     engines: {node: '>=14.16'}
     hasBin: true
     dependencies:
-      '@tsd/typescript': 4.9.5
+      '@tsd/typescript': 5.3.3
       eslint-formatter-pretty: 4.1.0
       globby: 11.1.0
+      jest-diff: 29.5.0
       meow: 9.0.0
       path-exists: 4.0.0
       read-pkg-up: 7.0.1
